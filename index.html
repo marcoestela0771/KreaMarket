@@ -3,452 +3,227 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Krea Global | TECNOLOGÍA, CAPACITACIÓN, EMPRENDIMIENTO Y RECURSOS DIGITALES</title>
-    <!-- Tipografías clásicas y limpias -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+    <title>Krea Global Market | Tienda Oficial</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <!-- MENÚ DE NAVEGACIÓN COMPLETO -->
     <header class="navbar">
-        <a href="index.html" class="logo-container">
-            <img src="img/logo-krea.png" alt="Logo Krea Global" class="logo-img">
-        </a>
-        <nav class="nav-links">
-            <a href="index.html" class="nav-link">Inicio</a>
-            <a href="catalogo.html" class="nav-link">Catálogo Tech</a>
-            <a href="servicios.html" class="nav-link">Más Servicios</a>
-            <a href="finanzas.html" class="nav-link" style="color: #10B981; font-weight: 600;">Créditos</a>
-            <a href="#alianzas" class="nav-link" style="color: #FBBF24;">Motos y Hogar</a>
-        </nav>
+        <div class="nav-container">
+            <div class="logo-container">
+                <span class="logo-icon">K</span>
+                <span class="logo-text">KreaMarket</span>
+            </div>
+            
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar televisores, licencias, motos...">
+                <button class="btn-search">🔍</button>
+            </div>
+
+            <nav class="nav-links">
+                <a href="#tecnologia">Tecnología</a>
+                <a href="#digital">Digital</a>
+                <a href="#alianzas">Hogar y Motos</a>
+            </nav>
+        </div>
     </header>
 
-    <!-- SECCIÓN HERO -->
-    <section class="hero">
-        <div class="hero-container">
-            <span class="badge glow-strong">ECOSISTEMA DE NEGOCIOS, TECNOLOGIA Y EMPRENDIMIENTO.</span>
-            <h1 class="hero-title">TECNOLOGIA Y RECURSOS <br> <span class="text-highlight">PARA MEJORAR TU VIDA.</span></h1>
-            <p class="hero-subtitle">ENCUENTRA AQUI LA TECNOLOGIA Y LOS RECURSOS DIGITALES QUE IMPULSAN TU VIDA. COMPRA SEGURA - DESCARGA DIRECTA.</p>
-            
-            <div class="hero-actions">
-                <a href="#tecnologia" class="btn-primary">ZONA TECNOLOGICA</a>
-                <a href="#digital" class="btn-secondary">EXPLORAR RECURSOS</a>
-            </div>
-
-            <!-- Mensaje de crecimiento estratégico -->
-            <div class="growth-message">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
-                <p><strong>Estamos en constante crecimiento.</strong> Contamos con un catálogo más amplio de soluciones tecnológicas y herramientas digitales. Si buscas un producto en específico que no veas aquí, <strong>¡pregúntanos!</strong></p>
-            </div>
-
-            <div class="krea-pillars">
-                <div class="pillar">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-                    <span>Equipos Tecnológicos</span>
-                </div>
-                <div class="pillar">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
-                    <span>Cursos y Educación</span>
-                </div>
-                <div class="pillar">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
-                    <span>Emprendimiento</span>
-                </div>
-            </div>
+    <section class="promo-banner">
+        <div class="banner-content">
+            <span class="tag">ENVÍOS LOCALES</span>
+            <h1>Tecnología y Soluciones Digitales <br>al Mejor Precio.</h1>
+            <p>Compra segura. Garantía directa. Asesoría por WhatsApp.</p>
         </div>
     </section>
 
-    <!-- SECCIÓN KREA TECNOLOGÍA -->
-    <section id="tecnologia" class="products-section">
-        <div class="section-header">
-            <h2>
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: text-bottom; margin-right: 6px;"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-                Hogar Inteligente
-            </h2>
-            <p>ACTUALIZA TU HOGAR CON LO ÚLTIMO EN TECNOLOGÍA PARA CADA PRESUPUESTO.</p>
+    <section class="quick-categories">
+        <a href="#tecnologia" class="cat-pill">📺 Smart TV & Box</a>
+        <a href="#digital" class="cat-pill">💻 Software & Cursos</a>
+        <a href="#alianzas" class="cat-pill">🏍️ Movilidad</a>
+        <a href="#alianzas" class="cat-pill">❄️ Electrodomésticos</a>
+    </section>
+
+    <section id="tecnologia" class="market-section">
+        <div class="section-title">
+            <h2>Hogar Inteligente y TvBox</h2>
+            <a href="#" class="view-all">Ver todo ></a>
         </div>
 
-        <div class="centered-grid">
+        <div class="product-grid">
             
-            <div class="product-card">
-                <span class="best-seller glow">EQUILIBRIO PERFECTO</span>
-                <img src="img/tech/q3box.jpg" alt="Q3 BOX S" class="product-img">
-                <div class="product-info">
-                    <h4>Q3 BOX S</h4>
-                    <div class="social-proof">
-                        <span class="rating">⭐⭐⭐⭐⭐ 4.9 <span class="reviews">(128)</span></span>
-                        <span class="sales">📦 +300 vendidos</span>
-                        <span class="views">🔥 45 personas viendo</span>
-                    </div>
-                    <p class="spec">Economía y configuración equilibrada.</p>
-                    <details class="tech-details">
-                        <summary>Características y Garantía</summary>
-                        <ul>
-                            <li>Conexión estable por Cable LAN y Wifi.</li>
-                            <li>Múltiples puertos USB (memorias, discos).</li>
-                            <li>Conexión directa por puerto HDMI.</li>
-                            <li><strong>Garantía:</strong> 1 mes (Parte electrónica).</li>
-                        </ul>
-                    </details>
-                    <span class="price">$120.000 COP</span>
+            <div class="card">
+                <div class="card-badge">MÁS VENDIDO</div>
+                <div class="img-container">
+                    <img src="img/tech/q3box.jpg" alt="Q3 BOX S" onerror="this.src='https://via.placeholder.com/300/F3F4F6/2563EB?text=Q3+BOX'">
                 </div>
-                <a href="https://wa.me/573054630601?text=Quiero%20mas%20informacion%20sobre%20el%20Q3%20BOX%20S" target="_blank" class="btn-buy">Comprar por WhatsApp</a>
-                <p class="trust-badge">🛡️ Compra segura con garantía local</p>
-            </div>
-
-            <div class="product-card">
-                <span class="best-seller digital-tag glow">BÁSICO Y FUNCIONAL</span>
-                <img src="img/tech/gamebox.jpg" alt="TvBox GAMEBOX" class="product-img">
-                <div class="product-info">
-                    <h4>GAMEBOX</h4>
-                    <div class="social-proof">
-                        <span class="rating">⭐⭐⭐⭐<span>⭐</span> 4.7 <span class="reviews">(85)</span></span>
-                        <span class="sales">📦 +150 vendidos</span>
-                        <span class="views">🎮 En tendencia</span>
+                <div class="card-body">
+                    <div class="stars">⭐⭐⭐⭐⭐ <span>(128)</span></div>
+                    <h3>TvBox Q3 BOX S</h3>
+                    <p class="specs">Conexión LAN/Wifi • Múltiples USB • HDMI</p>
+                    <div class="price-row">
+                        <span class="price">$120.000</span>
+                        <span class="currency">COP</span>
                     </div>
-                    <p class="spec">Económico, estable y con juegos retro.</p>
-                    <details class="tech-details">
-                        <summary>Características y Garantía</summary>
-                        <ul>
-                            <li>Excelente opción de TVBox básico.</li>
-                            <li>Conexión a Internet por Wifi.</li>
-                            <li>Conexión directa al TV por HDMI.</li>
-                            <li><strong>Garantía:</strong> 1 mes (Parte electrónica).</li>
-                        </ul>
-                    </details>
-                    <span class="price">$110.000 COP</span>
-                </div>
-                <a href="https://wa.me/573054630601?text=Quiero%20mas%20informacion%20sobre%20el%20GAMEBOX" target="_blank" class="btn-buy">Comprar por WhatsApp</a>
-                <p class="trust-badge">🛡️ Compra segura con garantía local</p>
-            </div>
-
-            <div class="product-card">
-                <span class="best-seller glow" style="background-color: #EF4444;">MÁXIMA POTENCIA</span>
-                <img src="img/catalogo/5GS.jpg" alt="TvBox 5GS" class="product-img" onerror="this.src='https://via.placeholder.com/400x500/111827/EF4444?text=TvBox+5GS'">
-                <div class="product-info">
-                    <h4>TvBox 5GS</h4>
-                    <div class="social-proof">
-                        <span class="rating">⭐⭐⭐⭐⭐ 5.0 <span class="reviews">(42)</span></span>
-                        <span class="sales">📦 +80 vendidos</span>
-                        <span class="views">⚡ Alta Gama</span>
-                    </div>
-                    <p class="spec">Veloz, potente y mucho almacenamiento.</p>
-                    <details class="tech-details">
-                        <summary>Características y Garantía</summary>
-                        <ul>
-                            <li>Conexión ultrarrápida por Cable y Wifi.</li>
-                            <li>Varios puertos USB y MicroSD para periféricos.</li>
-                            <li>Conexión directa por puerto HDMI.</li>
-                            <li><strong>Garantía:</strong> 3 meses (Parte electrónica).</li>
-                        </ul>
-                    </details>
-                    <span class="price">$170.000 COP</span>
-                </div>
-                <a href="https://wa.me/573054630601?text=Quiero%20mas%20informacion%20sobre%20el%20TvBox%205GS" target="_blank" class="btn-buy">Comprar por WhatsApp</a>
-                <p class="trust-badge">🛡️ Compra segura con garantía local</p>
-            </div>
-
-        </div>
-
-        <!-- MÁS TVBOX OCULTOS -->
-        <div id="tech-extra" class="hidden-section">
-            <div class="centered-grid" style="margin-top: 35px;">
-                
-                <div class="product-card">
-                    <img src="img/catalogo/ultra hd 8k.jpg" alt="Ultra HD 8K TV Box" class="product-img" onerror="this.src='https://via.placeholder.com/400x500/111827/6366F1?text=Ultra+HD+8K'">
-                    <div class="product-info">
-                        <h4>Ultra HD 8K TV Box</h4>
-                        <div class="social-proof">
-                            <span class="rating">⭐⭐⭐⭐⭐ 4.9 <span class="reviews">(74)</span></span>
-                        </div>
-                        <p class="spec">4GB RAM / 32GB Almacenamiento</p>
-                        <details class="tech-details">
-                            <summary>Ver detalles</summary>
-                            <ul>
-                                <li>Resolución soportada hasta 8K.</li>
-                                <li>Mayor capacidad para aplicaciones.</li>
-                                <li><strong>Garantía:</strong> 1 mes (Parte electrónica).</li>
-                            </ul>
-                        </details>
-                        <span class="price">$140.000 COP</span>
-                    </div>
-                    <a href="https://wa.me/573054630601?text=Quiero%20mas%20informacion%20sobre%20el%20Ultra%20HD%208K%20TV%20Box" target="_blank" class="btn-buy">Comprar por WhatsApp</a>
-                </div>
-
-                <div class="product-card">
-                    <img src="img/tech/r3.jpg" alt="TvBox R3 Eco" class="product-img">
-                    <div class="product-info">
-                        <h4>TvBox R3 Eco Wifi</h4>
-                        <div class="social-proof">
-                            <span class="rating">⭐⭐⭐⭐<span>⭐</span> 4.6 <span class="reviews">(95)</span></span>
-                        </div>
-                        <p class="spec">1GB RAM / 8GB Almacenamiento</p>
-                        <span class="price">$85.000 COP</span>
-                    </div>
-                    <a href="https://wa.me/573054630601?text=Quiero%20mas%20informacion%20sobre%20el%20TvBox%20R3%20Eco" target="_blank" class="btn-buy">Comprar por WhatsApp</a>
-                </div>
-
-                <div class="product-card">
-                    <img src="img/tech/onn.jpg" alt="Watch ONN Verde" class="product-img">
-                    <div class="product-info">
-                        <h4>Watch ONN Verde Wifi</h4>
-                        <div class="social-proof">
-                            <span class="rating">⭐⭐⭐⭐⭐ 4.8 <span class="reviews">(110)</span></span>
-                        </div>
-                        <p class="spec">1GB RAM / 8GB Almacenamiento</p>
-                        <span class="price">$110.000 COP</span>
-                    </div>
-                    <a href="https://wa.me/573054630601?text=Quiero%20mas%20informacion%20sobre%20el%20Watch%20ONN%20Verde" target="_blank" class="btn-buy">Comprar por WhatsApp</a>
+                    <p class="shipping">🚚 Entrega local disponible</p>
+                    <a href="https://wa.me/573054630601?text=Me%20interesa%20el%20Q3%20BOX%20S" target="_blank" class="btn-cart">Comprar ahora</a>
                 </div>
             </div>
-        </div>
 
-        <!-- BOTÓN DESPLEGABLE EN LA MISMA PÁGINA -->
-        <div class="toggle-container">
-            <button class="btn-toggle" onclick="toggleSection('tech-extra', this)">Ver otras opciones de equipos ↓</button>
-        </div>
+            <div class="card">
+                <div class="card-badge bg-green">ECONÓMICO</div>
+                <div class="img-container">
+                    <img src="img/tech/gamebox.jpg" alt="GAMEBOX" onerror="this.src='https://via.placeholder.com/300/F3F4F6/2563EB?text=GAMEBOX'">
+                </div>
+                <div class="card-body">
+                    <div class="stars">⭐⭐⭐⭐ 4.7 <span>(85)</span></div>
+                    <h3>TvBox GAMEBOX</h3>
+                    <p class="specs">Wifi • HDMI • Juegos Retro Integrados</p>
+                    <div class="price-row">
+                        <span class="price">$110.000</span>
+                        <span class="currency">COP</span>
+                    </div>
+                    <p class="shipping">🚚 Entrega local disponible</p>
+                    <a href="https://wa.me/573054630601?text=Me%20interesa%20el%20GAMEBOX" target="_blank" class="btn-cart">Comprar ahora</a>
+                </div>
+            </div>
 
-        <!-- BOTÓN ENLACE AL CATÁLOGO COMPLETO -->
-        <div class="toggle-container" style="margin-top: 30px;">
-            <a href="catalogo.html" class="btn-toggle" style="display: inline-block; text-decoration: none; padding: 14px 35px; background: rgba(0, 86, 255, 0.15); border-color: var(--color-primary); color: var(--text-primary);">
-                Ir al Catálogo de Cámaras y Proveedores ➔
-            </a>
-        </div>
-        
-        <!-- AVISO LEGAL DE GARANTÍA -->
-        <div class="legal-notice">
-            <p><strong>* Políticas de Garantía:</strong> La garantía especificada en cada equipo cubre exclusivamente defectos de fábrica en su parte electrónica. No cubre daños ocasionados por variaciones de voltaje en su domicilio. Los equipos se entregan funcionales; sin embargo, no garantizamos la estabilidad permanente de las aplicaciones de terceros.</p>
+            <div class="card">
+                <div class="card-badge bg-red">ALTA GAMA</div>
+                <div class="img-container">
+                    <img src="img/catalogo/5GS.jpg" alt="5GS" onerror="this.src='https://via.placeholder.com/300/F3F4F6/2563EB?text=5GS'">
+                </div>
+                <div class="card-body">
+                    <div class="stars">⭐⭐⭐⭐⭐ 5.0 <span>(42)</span></div>
+                    <h3>TvBox 5GS Potencia Max</h3>
+                    <p class="specs">Conexión ultrarrápida • Expansión MicroSD</p>
+                    <div class="price-row">
+                        <span class="price">$170.000</span>
+                        <span class="currency">COP</span>
+                    </div>
+                    <p class="shipping">🚚 Entrega local disponible</p>
+                    <a href="https://wa.me/573054630601?text=Me%20interesa%20el%205GS" target="_blank" class="btn-cart">Comprar ahora</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img-container">
+                    <img src="img/catalogo/ultra hd 8k.jpg" alt="Ultra HD 8K" onerror="this.src='https://via.placeholder.com/300/F3F4F6/2563EB?text=Ultra+HD+8K'">
+                </div>
+                <div class="card-body">
+                    <div class="stars">⭐⭐⭐⭐⭐ 4.9 <span>(74)</span></div>
+                    <h3>Ultra HD 8K TV Box</h3>
+                    <p class="specs">4GB RAM • 32GB Almacenamiento</p>
+                    <div class="price-row">
+                        <span class="price">$140.000</span>
+                        <span class="currency">COP</span>
+                    </div>
+                    <p class="shipping">🚚 Entrega local disponible</p>
+                    <a href="https://wa.me/573054630601?text=Me%20interesa%20el%20Ultra%20HD%208K" target="_blank" class="btn-cart">Comprar ahora</a>
+                </div>
+            </div>
+
         </div>
     </section>
 
-    <!-- SECCIÓN KREA DIGITAL -->
-    <section id="digital" class="products-section alt-bg">
-        <div class="section-header">
-            <h2>
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--color-digital)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: text-bottom; margin-right: 6px;"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-                Krea Digital
-            </h2>
-            <p>Guías, cursos y Ayudas premium listas para descargar y aplicar en tu vida.</p>
+    <section id="digital" class="market-section bg-light">
+        <div class="section-title">
+            <h2>Recursos y Licencias Digitales</h2>
+            <a href="#" class="view-all">Ver todo ></a>
         </div>
 
-        <div class="centered-grid">
+        <div class="product-grid">
             
-            <div class="product-card">
-                <span class="best-seller digital-tag glow">TOP VENTAS</span>
-                <img src="img/digital/canva-pro.jpg" alt="Canva Pro 1 Año" class="product-img">
-                <div class="product-info">
-                    <h4>Licencia Canva Pro (1 Año)</h4>
-                    <div class="social-proof">
-                        <span class="rating">⭐⭐⭐⭐⭐ 4.9 <span class="reviews">(215)</span></span>
-                        <span class="sales">📦 +500 entregas</span>
-                        <span class="views">💎 Plan Premium</span>
-                    </div>
-                    <p class="desc">Desbloquea todo el potencial de diseño de forma económica.</p>
-                    <span class="price">$20.000 COP</span>
+            <div class="card">
+                <div class="card-badge bg-purple">ENTREGA INMEDIATA</div>
+                <div class="img-container">
+                    <img src="img/digital/canva-pro.jpg" alt="Canva Pro" style="object-fit: cover;" onerror="this.src='https://via.placeholder.com/300/F3F4F6/8B5CF6?text=Canva+Pro'">
                 </div>
-                <a href="https://wa.me/573054630601?text=Quiero%20mas%20informacion%20sobre%20la%20Licencia%20Canva%20Pro" target="_blank" class="btn-buy buy-digital">Comprar por WhatsApp</a>
-                <p class="trust-badge">⚡ Activación inmediata garantizada</p>
-            </div>
-
-            <div class="product-card">
-                <span class="best-seller glow" style="background-color: #3B82F6;">IDEAL PARA PROFESORES</span>
-                <img src="img/digital/literatura-docente.jpg" alt="La literatura obligada del docente" class="product-img">
-                <div class="product-info">
-                    <h4>El Kit del Docente</h4>
-                    <div class="social-proof">
-                        <span class="rating">⭐⭐⭐⭐⭐ 4.8 <span class="reviews">(190)</span></span>
-                        <span class="sales">📦 +400 descargas</span>
-                        <span class="views">👨‍🏫 Alta Demanda</span>
+                <div class="card-body">
+                    <div class="stars">⭐⭐⭐⭐⭐ 4.9 <span>(215)</span></div>
+                    <h3>Licencia Canva Pro (1 Año)</h3>
+                    <p class="specs">Plantillas Premium • Quitafondos</p>
+                    <div class="price-row">
+                        <span class="price">$20.000</span>
+                        <span class="currency">COP</span>
                     </div>
-                    <p class="desc">Sistemas automatizados para la labor educativa.</p>
-                    <span class="price">$20.000 COP</span>
-                </div>
-                <a href="https://wa.me/573054630601?text=Quiero%20mas%20informacion%20sobre%20El%20Kit%20del%20Docente" target="_blank" class="btn-buy buy-digital">Comprar por WhatsApp</a>
-                <p class="trust-badge">⚡ Acceso y descarga directa</p>
-            </div>
-
-        </div>
-
-        <div id="digital-extra" class="hidden-section">
-            <div class="centered-grid" style="margin-top: 35px;">
-                <div class="product-card">
-                    <img src="img/digital/emprender-facil.jpg" alt="Emprender fácil en 2026" class="product-img">
-                    <div class="product-info">
-                        <h4>Emprender fácil en 2026</h4>
-                        <div class="social-proof"><span class="rating">⭐⭐⭐⭐⭐ 4.7 <span class="reviews">(120)</span></span></div>
-                        <p class="desc">Plan de acción práctica y selección de recursos.</p>
-                        <span class="price">$10.000 COP</span>
-                    </div>
-                    <a href="https://wa.me/573054630601?text=Quiero%20mas%20informacion%20sobre%20la%20guía%20Emprender%20fácil" target="_blank" class="btn-buy buy-digital">Comprar por WhatsApp</a>
-                </div>
-
-                <div class="product-card">
-                    <img src="img/digital/calistenia.jpg" alt="Haz calistenia y vive sabroso" class="product-img">
-                    <div class="product-info">
-                        <h4>Haz calistenia y vive sabroso</h4>
-                        <div class="social-proof"><span class="rating">⭐⭐⭐⭐⭐ 4.9 <span class="reviews">(205)</span></span></div>
-                        <p class="desc">Rutinas y hábitos para una vida saludable.</p>
-                        <span class="price">$15.000 COP</span>
-                    </div>
-                    <a href="https://wa.me/573054630601?text=Quiero%20mas%20informacion%20sobre%20la%20guía%20Haz%20calistenia" target="_blank" class="btn-buy buy-digital">Comprar por WhatsApp</a>
-                </div>
-
-                <div class="product-card">
-                    <img src="img/digital/diseno-marketing.jpg" alt="Megacolección diseño y marketing" class="product-img">
-                    <div class="product-info">
-                        <h4>Megacolección de Diseño</h4>
-                        <div class="social-proof"><span class="rating">⭐⭐⭐⭐<span>⭐</span> 4.6 <span class="reviews">(88)</span></span></div>
-                        <p class="desc">Miles de recursos profesionales listos.</p>
-                        <span class="price">$30.000 COP</span>
-                    </div>
-                    <a href="https://wa.me/573054630601?text=Quiero%20mas%20informacion%20sobre%20la%20Megacolección%20de%20Diseño" target="_blank" class="btn-buy buy-digital">Comprar por WhatsApp</a>
+                    <p class="shipping text-purple">⚡ Descarga digital</p>
+                    <a href="https://wa.me/573054630601?text=Me%20interesa%20Canva%20Pro" target="_blank" class="btn-cart bg-purple-btn">Adquirir Licencia</a>
                 </div>
             </div>
-        </div>
 
-        <div class="toggle-container">
-            <button class="btn-toggle btn-toggle-digital" onclick="toggleSection('digital-extra', this)">Ver catálogo digital reducido ↓</button>
-        </div>
+            <div class="card">
+                <div class="img-container">
+                    <img src="img/digital/literatura-docente.jpg" alt="Kit Docente" style="object-fit: cover;" onerror="this.src='https://via.placeholder.com/300/F3F4F6/8B5CF6?text=Kit+Docente'">
+                </div>
+                <div class="card-body">
+                    <div class="stars">⭐⭐⭐⭐⭐ 4.8 <span>(190)</span></div>
+                    <h3>El Kit del Docente</h3>
+                    <p class="specs">Rúbricas en Excel • Formatos Automatizados</p>
+                    <div class="price-row">
+                        <span class="price">$20.000</span>
+                        <span class="currency">COP</span>
+                    </div>
+                    <p class="shipping text-purple">⚡ Descarga digital</p>
+                    <a href="https://wa.me/573054630601?text=Me%20interesa%20el%20Kit%20Docente" target="_blank" class="btn-cart bg-purple-btn">Adquirir Kit</a>
+                </div>
+            </div>
 
-        <!-- BOTÓN ENLACE A MÁS SERVICIOS DIGITALES -->
-        <div class="toggle-container" style="margin-top: 30px;">
-            <a href="servicios.html" class="btn-toggle btn-toggle-digital" style="display: inline-block; text-decoration: none; padding: 14px 35px; background: rgba(0, 230, 118, 0.15); border-color: var(--color-digital); color: var(--text-primary);">
-                Ir a Servicios de Streaming y Software ➔
-            </a>
         </div>
     </section>
 
-    <!-- SECCIÓN: LÍNEA HOGAR Y MOVILIDAD (TELEVISORES Y MÁS) -->
-    <section id="alianzas" class="products-section">
-        <div class="section-header">
-            <h2 style="color: #FBBF24;">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: text-bottom; margin-right: 6px;"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-                Hogar y Movilidad
-            </h2>
-            <p>Con el respaldo del Grupo Empresarial, expandimos nuestras soluciones a través de <strong>Televisores y Más</strong>.</p>
+    <section id="alianzas" class="market-section">
+        <div class="section-title">
+            <h2>Hogar, Motos y Electrodomésticos</h2>
+            <a href="https://televisoresymas.com" target="_blank" class="view-all">Visitar tienda aliada ></a>
         </div>
 
-        <div class="centered-grid">
+        <div class="product-grid">
             
-            <div class="product-card alliance-card">
-                <span class="best-seller alliance-tag glow">LÍNEA BLANCA</span>
-                <img src="img/alianzas/electro.jpg" alt="Línea de Electrodomésticos" class="product-img" onerror="this.src='https://via.placeholder.com/400x500/111827/F59E0B?text=Electrodomésticos'">
-                <div class="product-info">
-                    <h4 style="color: #FBBF24;">Electrodomésticos</h4>
-                    <p class="desc">Neveras, lavadoras, estufas y todo lo que tu hogar necesita con el mejor respaldo.</p>
-                    <div class="social-proof" style="margin-top: 10px;">
-                        <span class="sales" style="background: rgba(245, 158, 11, 0.1); color: #FBBF24;">📦 Envíos locales</span>
-                    </div>
+            <div class="card">
+                <div class="img-container">
+                    <img src="img/alianzas/electro.jpg" alt="Electrodomésticos" style="object-fit: cover;" onerror="this.src='https://via.placeholder.com/300/F3F4F6/F59E0B?text=Línea+Blanca'">
                 </div>
-                <a href="https://wa.me/573054630601?text=Hola,%20quiero%20conocer%20el%20catálogo%20de%20Electrodomésticos%20(Línea%20Hogar)" target="_blank" class="btn-buy btn-alliance">Solicitar Catálogo por WhatsApp</a>
+                <div class="card-body">
+                    <h3>Línea Blanca y Electrodomésticos</h3>
+                    <p class="specs">Neveras, lavadoras, estufas.</p>
+                    <p class="shipping">📞 Asesoría de compra</p>
+                    <a href="https://wa.me/573054630601?text=Busco%20electrodomésticos" target="_blank" class="btn-cart bg-dark">Consultar Catálogo</a>
+                </div>
             </div>
 
-            <div class="product-card alliance-card">
-                <span class="best-seller alliance-tag glow">MOVILIDAD</span>
-                <img src="img/alianzas/motos.jpg" alt="Motocicletas y Movilidad" class="product-img" onerror="this.src='https://via.placeholder.com/400x500/111827/F59E0B?text=Motocicletas'">
-                <div class="product-info">
-                    <h4 style="color: #FBBF24;">Motos y Vehículos</h4>
-                    <p class="desc">Descubre nuestro inventario de motocicletas. Facilidades, potencia y respaldo total.</p>
-                    <div class="social-proof" style="margin-top: 10px;">
-                        <span class="sales" style="background: rgba(245, 158, 11, 0.1); color: #FBBF24;">🏍️ Asesoría personalizada</span>
-                    </div>
+            <div class="card">
+                <div class="img-container">
+                    <img src="img/alianzas/motos.jpg" alt="Motos" style="object-fit: cover;" onerror="this.src='https://via.placeholder.com/300/F3F4F6/F59E0B?text=Motos'">
                 </div>
-                <a href="https://wa.me/573054630601?text=Hola,%20quiero%20conocer%20el%20inventario%20y%20modelos%20de%20Motos" target="_blank" class="btn-buy btn-alliance">Ver Modelos por WhatsApp</a>
+                <div class="card-body">
+                    <h3>Motocicletas y Movilidad</h3>
+                    <p class="specs">Inventario multimarcas y financiación.</p>
+                    <p class="shipping">📞 Asesoría de compra</p>
+                    <a href="https://wa.me/573054630601?text=Busco%20información%20de%20motos" target="_blank" class="btn-cart bg-dark">Ver Modelos</a>
+                </div>
             </div>
 
-            <div class="product-card alliance-card">
-                <span class="best-seller alliance-tag glow">ENTRETENIMIENTO</span>
-                <img src="img/alianzas/televisores.jpg" alt="Televisores y Sonido" class="product-img" onerror="this.src='https://via.placeholder.com/400x500/111827/F59E0B?text=Televisores+y+Audio'">
-                <div class="product-info">
-                    <h4 style="color: #FBBF24;">Televisores y Audio</h4>
-                    <p class="desc">Pantallas de última generación y sistemas de sonido para complementar tu TvBox.</p>
-                    <div class="social-proof" style="margin-top: 10px;">
-                        <span class="sales" style="background: rgba(245, 158, 11, 0.1); color: #FBBF24;">📺 Todas las marcas</span>
-                    </div>
-                </div>
-                <a href="https://wa.me/573054630601?text=Hola,%20quiero%20ver%20los%20Televisores%20y%20equipos%20de%20Sonido" target="_blank" class="btn-buy btn-alliance">Ver Opciones por WhatsApp</a>
-            </div>
-
-        </div>
-        
-        <div style="text-align: center; margin-top: 30px;">
-            <p style="font-size: 0.9rem; color: var(--text-secondary);">¿Prefieres explorar directamente nuestra tienda aliada? <br> <a href="https://televisoresymas.com/?srsltid=AfmBOopONTOiZCMjslDriDHltvBrj-brTkN6ox1nhgRcR4Ul9DD_iJps" target="_blank" style="color: #FBBF24; font-weight: 600; text-decoration: none;">Visita Televisores y Más aquí ➔</a></p>
         </div>
     </section>
 
-    <!-- SECCIÓN SOBRE NOSOTROS -->
-    <section id="nosotros" class="about-section alt-bg">
-        <div class="about-container">
-            <div class="about-text">
-                <h2>Conectando personas <br> con <span class="text-highlight">soluciones reales.</span></h2>
-                <p><strong>Krea Global</strong> forma parte de un sólido grupo empresarial, una organización colombiana que desde 2014 sirve al país con un profundo sentido humano.</p>
-                <p>Nuestra misión es acompañarte en cada paso. Creemos en brindar soluciones tecnológicas accesibles y recursos prácticos para quienes buscan emprender, educar o simplemente mejorar su calidad de vida en casa, sin importar distinciones de ningún tipo.</p>
+    <footer class="market-footer">
+        <div class="footer-grid">
+            <div>
+                <h4>Atención al Cliente</h4>
+                <p>WhatsApp: 305 463 0601</p>
+                <p>servitvcol@gmail.com</p>
             </div>
-            
-            <div class="contact-card">
-                <h3>Estamos aquí para ti</h3>
-                <div class="contact-item">
-                    <span class="contact-icon">📍</span>
-                    <div>
-                        <strong>Ubicación Oficial</strong>
-                        <p>Cali, Colombia</p>
-                    </div>
-                </div>
-                <div class="contact-item">
-                    <span class="contact-icon">📱</span>
-                    <div>
-                        <strong>Línea de Atención</strong>
-                        <a href="https://wa.me/573054630601?text=Hola,%20quiero%20mas%20informacion%20sobre%20sus%20productos" class="link-contacto" target="_blank">305 463 0601</a>
-                    </div>
-                </div>
-                <div class="contact-item">
-                    <span class="contact-icon">✉️</span>
-                    <div>
-                        <strong>Correo Electrónico</strong>
-                        <a href="mailto:servitvcol@gmail.com" class="link-contacto">servitvcol@gmail.com</a>
-                    </div>
-                </div>
-
-                <hr class="divider">
-
-                <h3 style="margin-bottom: 15px; font-size: 1.2rem;">Envíanos un mensaje</h3>
-                <form action="https://formsubmit.co/servitvcol@gmail.com" method="POST" class="contact-form">
-                    <input type="hidden" name="_subject" value="Nuevo mensaje desde Krea Global Web">
-                    <input type="hidden" name="_template" value="table">
-                    <input type="hidden" name="_language" value="es">
-                    
-                    <input type="text" name="name" placeholder="Tu Nombre completo" required class="form-input">
-                    <input type="email" name="email" placeholder="Tu Correo electrónico" required class="form-input">
-                    <textarea name="message" rows="4" placeholder="¿En qué te podemos ayudar?" required class="form-input"></textarea>
-                    <button type="submit" class="btn-buy" style="margin-top: 5px;">Enviar Correo</button>
-                </form>
-
+            <div>
+                <h4>Políticas</h4>
+                <p>Garantías de fábrica</p>
+                <p>Tiempos de entrega</p>
             </div>
         </div>
-    </section>
-
-    <footer class="footer">
-        <p>&copy; Krea Global | Tecnología, Hogar y Soluciones Digitales. | Cali, Colombia. @2026 </p>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Krea Global Market. Todos los derechos reservados.</p>
+        </div>
     </footer>
 
-    <!-- BOTÓN FLOTANTE WHATSAPP -->
-    <a href="https://wa.me/573054630601?text=Hola,%20quiero%20mas%20informacion%20sobre%20sus%20productos" class="whatsapp-floating" target="_blank">
-        💬 Click para contactarnos.
-    </a>
-
-    <!-- SCRIPT PARA DESPLEGAR PRODUCTOS -->
-    <script>
-        function toggleSection(sectionId, btn) {
-            const section = document.getElementById(sectionId);
-            if (section.style.maxHeight && section.style.maxHeight !== "0px") {
-                section.style.maxHeight = "0px";
-                btn.innerHTML = btn.innerHTML.includes("equipos") ? "Ver otras opciones de equipos ↓" : "Ver catálogo digital reducido ↓";
-            } else {
-                section.style.maxHeight = section.scrollHeight + "px";
-                btn.innerHTML = "Ocultar catálogo ↑";
-            }
-        }
-    </script>
 </body>
 </html>
